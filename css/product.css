@@ -104,14 +104,23 @@ html, body {
     box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
   }
   
-  .color-choose input[type="radio"]#red + label span {
-    background-color: #C91524;
+  .color-choose input[type="radio"]#white + label span {
+    background-color: white;
   }
-  .color-choose input[type="radio"]#blue + label span {
-    background-color: #314780;
+  .color-choose input[type="radio"]#orange + label span {
+    background-color: orangered;
   }
   .color-choose input[type="radio"]#black + label span {
-    background-color: #323232;
+    background-color: black;
+  }
+  .color-choose input[type="radio"]#rosegold + label span {
+    background-color: pink;
+  }
+  .color-choose input[type="radio"]#gold + label span {
+    background-color: gold;
+  }
+  .color-choose input[type="radio"]#silver + label span {
+    background-color: silver;
   }
   
   .color-choose input[type="radio"]:checked + label span {

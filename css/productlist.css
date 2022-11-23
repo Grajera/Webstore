@@ -1,0 +1,110 @@
+
+.row {
+    width: 100%;
+    align-items: center;
+    font-size: 30px;
+  }
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px; 
+  }
+  
+ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+.cameracard {
+    
+    margin-top: 40px;
+    margin-right: 60px;
+    margin-left: 160px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 250px;
+    height: 300px;
+    float: left;
+  }
+  
+  
+.cameracard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    width: 300px;
+    height: 350px;
+}
+.harddrivecard {
+    
+    margin-top: 40px;
+    margin-right: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 250px;
+    height: 300px;
+    float: left;
+    
+  }
+  
+
+.harddrivecard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    width: 300px;
+    height: 350px;
+}
+.shirtcard {
+    
+    margin-top: 40px;
+    margin-right: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 250px;
+    height: 300px;
+    float: left;
+    align-items: center;
+}
+
+.shirtcard img{
+    
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+    margin-left: 50px; 
+}
+  
+  
+.shirtcard:hover {
+    
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    width: 300px;
+    height: 350px;
+}
+
+.watchcard {
+    
+    margin-top: 40px;
+    margin-right: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 250px;
+    height: 300px;
+    float: left;
+  }
+  
+.watchcard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    width: 300px;
+    height: 350px;
+}
+  
+.container {
+    padding: 2px 16px;
+}

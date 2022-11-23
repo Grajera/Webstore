@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Amazoom.com: Product Title.</title>
+  <title>Amazoom.com: Hard Drive</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css"/>
@@ -102,10 +102,27 @@
     <main class="container">
  
         <!-- Left Column / Item Image -->
+      
+       <script> 
+        
+        function loadFile() {
+          var input, file, fr;
+  
+          file = "products_table.json";
+          fr = new FileReader();
+          fr.onload = receivedText;
+          fr.readAsText(file);
+      
+          function receivedText(e) {
+            let lines = e.target.result;
+            var newArr = JSON.parse(lines); 
+          }
+        }
+        loadFile();
+
+       </script> 
         <div class="left-column">
-          <img data-image="black" src="img/black.png" alt="">
-          <img data-image="blue" src="img/blue.png" alt="">
-          <img data-image="red" class="active" src="img/red.png" alt="">
+          <img data-image="white" class="active" src="img/items/external-hard-drive.jpg" alt="white shirt">
         </div>
        
         <!-- Right Column -->
@@ -113,9 +130,9 @@
        
           <!-- Product Description -->
           <div class="product-description">
-            <span>Category</span>
-            <h1>Title</h1>
-            <p>Description</p>
+            <span>Electronics</span>
+            <h1>Hard Drive</h1>
+            <p>Hard drives straight from the computer. Everything inside is yours when you buy. No returns!</p>
           </div>
        
           <!-- Product Configuration -->
@@ -123,45 +140,28 @@
        
             <!-- Product Color -->
             <div class="product-color">
-              <span>Color</span>
+              <span>Storage Options</span>
        
               <div class="color-choose">
-                <div>
-                  <input data-image="red" type="radio" id="red" name="color" value="red" checked>
-                  <label for="red"><span></span></label>
-                </div>
-                <div>
-                  <input data-image="blue" type="radio" id="blue" name="color" value="blue">
-                  <label for="blue"><span></span></label>
-                </div>
-                <div>
-                  <input data-image="black" type="radio" id="black" name="color" value="black">
-                  <label for="black"><span></span></label>
-                </div>
+              <div>
               </div>
-       
-            </div>
-       
-            <!-- Cable Configuration -->
-            <div class="item-config">
-              <span>Item configuration</span>
-       
+              </div>
               <div class="item-choose">
-                <button>Option 1</button>
-                <button>Option 2</button>
-                <button>Option 3</button>
+                <button id = "1">1 TB</button>
+                <button id = "2">2 TB</button>
+                <button id = "4">4 TB</button>
               </div>
             </div>
+       
           </div>
        
           <!-- Product Pricing -->
-          <div class="product-price">
-            <span>$999.99</span>
+          <div class="product-price" id="productbtn2">
+            <span>$80.00</span>
             <a href="#" class="cart-btn">Add to your cart</a>
           </div>
         </div>
       </main>
-    <br><br><br><br><br><br>
     <br><br><br><br><br><br>
   </section>
 
@@ -193,7 +193,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
-<script src="js/product.js" charset="utf-8"></script>
+  <script src="js/product.js" charset="utf-8"></script>
 </body>
 
 </html>

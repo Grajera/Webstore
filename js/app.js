@@ -1,6 +1,5 @@
 $(function() {
   $('#nav-search-select').change(function() {
-    var selectedText = $(this).find('option:selected').text();
-    $('#nav-search').find('.nav-search-label').html(selectedText);
+    window.location.href="product_page_camera.html";
   });
 });
